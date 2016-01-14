@@ -8,6 +8,6 @@ RUN git clone https://github.com/byt3bl33d3r/MITMf /MITMf
 WORKDIR /MITMf
 RUN git submodule init && git submodule update --recursive
 RUN pip install -r requirements.txt
-RUN touch /MITMf/logs/dns/dns.log
+VOLUME /MITMf/logs/
 
 ENTRYPOINT ["python", "/MITMf/mitmf.py"]

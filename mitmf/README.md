@@ -9,3 +9,5 @@ mitmf(){
     ondrejmo/mitmf "$@"  
   sudo sysctl -w net.ipv4.ip_forward=1  
 }  
+
+**WARNING:** Because of some issues with volumes and because running MITMf in docker sometimes breaks networking, I've decided to use it only with [coreos/toolbox](https://github.com/coreos/toolbox) script.

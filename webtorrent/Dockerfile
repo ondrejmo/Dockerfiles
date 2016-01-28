@@ -7,4 +7,4 @@ RUN npm install -g webtorrent
 WORKDIR /stream
 VOLUME /stream
 
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "webtorrent" ]

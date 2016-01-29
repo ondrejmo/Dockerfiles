@@ -1,5 +1,7 @@
 # A command line tool for DigitalOcean services including Droplets and DNS
 ## [Github: digitalocean/doctl](https://www.github.com/digitalocean/doctl)
+<pre>
+<code>
 doctl() {  
   docker run -it --rm \  
     --name doctl \  
@@ -7,3 +9,5 @@ doctl() {
     --log-driver none \  
     ondrejmo/doctl "$@"  
 }  
+</code>
+</pre>

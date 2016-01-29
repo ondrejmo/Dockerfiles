@@ -2,6 +2,8 @@
 # commandline chromecast player
 ## [Github: mafintosh/peerflix](https://github.com/mafintosh/peerflix)
 ## [Github: xat/castnow)](https://github.com/xat/castnow)
+<pre>
+<code>
 peerflix(){  
   docker run -it --rm \  
     --net host \  
@@ -18,3 +20,5 @@ castnow(){
     --entrypoint castnow \  
     ondrejmo/stream "$@"  
 }  
+</code>
+</pre>

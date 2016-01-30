@@ -4,4 +4,4 @@ ADD README.md /README.md
 
 RUN npm install -g dispatch-proxy
 
-ENTRYPOINT [ "dispatch-proxy" ]
+ENTRYPOINT [ "dispatch" ]

@@ -1,5 +1,5 @@
-## Pony - a scret store backend by gpg
-## https://github.com/jfrazelle/pony
+# Pony - a secret store backend by gpg
+## [Github: jfrazelle/pony](https://github.com/jfrazelle/pony)
 <pre>
 <code>
 pony(){

@@ -1,4 +1,4 @@
-# Pony - a secret store backend by gpg
+# Local File-Based Password, API Key, Secret, Recovery Code Store Backed By GPG
 ## [Github: jfrazelle/pony](https://github.com/jfrazelle/pony)
 <pre>
 <code>

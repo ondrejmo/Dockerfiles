@@ -2,7 +2,7 @@
 ## [Github: Morhaus/dispatch-proxy](https://github.com/Morhaus/dispatch-proxy)
 <pre>
 <code>
-dispatch-proxy(){  
+dispatch(){  
   docker run -it --rm \  
     --net host \  
     ondrejmo/dispatch-proxy "$@"  

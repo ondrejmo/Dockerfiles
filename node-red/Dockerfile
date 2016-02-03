@@ -3,7 +3,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 ADD README.md /README.md
 
 RUN npm install -g node-red node-red-admin
-RUN npm install -g node-red-node-redis node-red-node-mongodb node-red-node-sqlite node-red-node-mysql
+RUN npm install -g node-red-node-redis node-red-node-mongodb node-red-node-sqlite node-red-node-mysql node-red-contrib-ui
 RUN npm install -g node-red-node-email node-red-node-twitter node-red-node-irc
 RUN npm install -g node-red-node-ping node-red-node-wol
 

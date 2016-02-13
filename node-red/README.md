@@ -7,7 +7,6 @@ node-red(){
   del_stopped node-red  
 
   docker run -d \  
-
     -p 127.0.0.1:1880:1880 \  
     -v ~/data/node-red:/root/.node-red \  
     --name node-red \  

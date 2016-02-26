@@ -4,7 +4,8 @@
 <code>
 nativefier() {  
   docker run -it --rm \
-    -v /apps:/apps \
+    --net host \
+    -v `pwd`/apps:/apps \
     -w /apps \
     ondrejmo/nativefier "$@"  
 }  

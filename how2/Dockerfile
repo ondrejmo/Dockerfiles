@@ -4,4 +4,4 @@ ADD README.md /README.md
 
 RUN npm install -g how2
 
-ENTRYPOINT [ "dispatch" ]
+ENTRYPOINT [ "how2" ]

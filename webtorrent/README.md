@@ -1,7 +1,6 @@
 # Streaming torrent client for the web
 ## [Github: feross/webtorrent](https://github.com/feross/webtorrent)
-<pre>
-<code>
+```bash
 webtorrent(){  
   docker run -it --rm \  
     --net host \  
@@ -9,5 +8,4 @@ webtorrent(){
     -w /stream \  
     ondrejmo/webtorrent "$@"  
 }  
-</code>
-</pre>
+```

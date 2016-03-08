@@ -1,7 +1,6 @@
 # Dumb downloader that scrapes the web
 ## [Github: soimort/you-get](https://github.com/soimort/you-get)
-<pre>
-<code>
+```bash
 you-get(){  
   docker run -it --rm \  
     --log-driver none \  
@@ -9,5 +8,4 @@ you-get(){
     -w /downloads \  
     ondrejmo/you-get "$@"  
 }  
-</code>
-</pre>
+```

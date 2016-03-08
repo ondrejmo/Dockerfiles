@@ -1,7 +1,6 @@
 # SSH multiplex
 ## [Github: crosbymichael/slex](https://www.github.com/crosbymichael/slex)
-<pre>
-<code>
+```bash
 slex() {  
   docker run -it --rm \  
     --name slex \  
@@ -11,5 +10,4 @@ slex() {
     -v /etc/hosts:/etc/hosts:ro \  
     ondrejmo/slex "$@"  
 }  
-</code>
-</pre>
+```

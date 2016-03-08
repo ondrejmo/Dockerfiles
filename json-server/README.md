@@ -1,7 +1,6 @@
 # Get a full fake REST API with zero coding in less than 30 seconds (seriously)
 ## [Github: typicode/json-server](https://github.com/typicode/json-server)
-<pre>
-<code>
+```bash
 json-server(){  
   docker run -it --rm \  
     --net host \  
@@ -9,5 +8,4 @@ json-server(){
     -w /data \  
     ondrejmo/json-server "$@"  
 }  
-</code>
-</pre>
+```

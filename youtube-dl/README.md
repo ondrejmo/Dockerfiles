@@ -1,7 +1,6 @@
 # Small command-line program to download videos from YouTube.com and other video sites
 ## [Github: rg3/youtube-dl](https://github.com/rg3/youtube-dl)
-<pre>
-<code>
+```bash
 youtube-dl(){  
   docker run -it --rm \  
     --log-driver none \  
@@ -9,5 +8,4 @@ youtube-dl(){
     -w /downloads \  
     ondrejmo/youtube-dl "$@"  
 }  
-</code>
-</pre>
+```

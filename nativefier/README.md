@@ -1,7 +1,6 @@
 # Wrap any web page natively without even thinking, across Windows, OSX and Linux
 ## [Github: jiahaog/nativefier](https://github.com/jiahaog/nativefier)
-<pre>
-<code>
+```bash
 nativefier() {  
   docker run -it --rm \
     --net host \
@@ -9,5 +8,4 @@ nativefier() {
     -w /apps \
     ondrejmo/nativefier "$@"  
 }  
-</code>
-</pre>
+```

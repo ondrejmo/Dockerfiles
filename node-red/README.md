@@ -11,7 +11,6 @@ node-red(){
     --name node-red \  
     ondrejmo/node-red  
 
-  hostess add node-red $(docker inspect --format "{{.NetworkSettings.Networks.bridge.IPAddress}}" node-red)  
-  docker exec -it node-red bash  
+  docker exec -it node-red bash -c "export TERM=$TERM; clear; bash"
 }  
 ```

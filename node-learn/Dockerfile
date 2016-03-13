@@ -9,3 +9,5 @@ RUN npm install -g how-to-npm
 RUN npm install -g stream-adventure
 RUN npm install -g functional-javascript-workshop
 RUN npm install -g expressworks
+
+ENTRYPOINT [ "bash" ]

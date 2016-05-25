@@ -1,0 +1,8 @@
+# Vegeta is a versatile HTTP load testing tool built out of a need to drill HTTP services with a constant request rate.
+## [Github: tsenart/vegeta](https://github.com/tsenart/vegeta)
+```bash
+vegeta() {  
+  docker run -it --rm \  
+    ondrejmo/vegeta "$@"  
+}  
+```

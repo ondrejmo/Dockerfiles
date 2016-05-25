@@ -3,7 +3,7 @@
 ```bash
 waybackpack(){  
 	docker run -it --rm \  
-    -v `pwd`:/downloads \  
+    -v $(pwd):/downloads \  
     -w /downloads  \  
     ondrejmo/waybackpack"$@"  
 }  

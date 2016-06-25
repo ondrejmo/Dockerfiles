@@ -9,8 +9,7 @@ RUN apt-get update && apt-get install -y \
   python-ipy \
   python-pypcap \
   python-pip \
-  curl \
-  tar \
+  wget \
   git
 
 RUN pip install pygeoip
@@ -20,10 +19,12 @@ WORKDIR /opt/
 RUN git clone https://github.com/USArmyResearchLab/Dshell.git
 
 # download and gunzip GeoIP files
-RUN curl -sSL "http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz" | tar -v -C /opt/Dshell/share/GeoIP/ -xz
-RUN curl -sSL "http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz" | tar -v -C /opt/Dshell/share/GeoIP/ -xz
-RUN curl -sSL "http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz" | tar -v -C /opt/Dshell/share/GeoIP/ -xz
-RUN curl -sSL "http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNumv6.dat.gz" | tar -v -C /opt/Dshell/share/GeoIP/ -xz
+WORKDIR /opt/Dshell/share/GeoIP/
+RUN wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+RUN wget http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz
+RUN wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
+RUN wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNumv6.dat.gz
+RUN gunzip *.gz
 
 # make Dshell
 WORKDIR /opt/Dshell/

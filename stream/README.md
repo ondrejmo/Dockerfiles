@@ -1,7 +1,7 @@
 # Streaming torrent client for node.js
 # commandline chromecast player
 ## [Github: mafintosh/peerflix](https://github.com/mafintosh/peerflix)
-## [Github: xat/castnow)](https://github.com/xat/castnow)
+## [Github: xat/castnow](https://github.com/xat/castnow)
 ```bash
 peerflix(){  
   docker run -it --rm \  

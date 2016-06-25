@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:alpine
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 ADD README.md /README.md
 

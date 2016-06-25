@@ -4,8 +4,8 @@
 webtorrent(){  
   docker run -it --rm \  
     --net host \  
-    -v `pwd`:/stream \  
-    -w /stream \  
+    -v `pwd`:/downloads \  
+    -w /downloads \  
     ondrejmo/webtorrent "$@"  
 }  
 ```

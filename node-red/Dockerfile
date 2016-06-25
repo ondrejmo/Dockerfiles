@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 ADD README.md /README.md
 
-RUN apk update && apk add make python gcc \
+RUN apk update && apk add nodejs make python gcc \
   && rm -rf /var/cache/apk/*
 RUN npm install -g node-red node-red-admin
 RUN rm -r /root/.npm

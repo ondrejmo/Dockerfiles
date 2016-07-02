@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
-LABEL caddy_version="latest" hugo_version="0.16" architecture="amd64"
+LABEL caddy_version="0.8.3" hugo_version="0.16" architecture="amd64"
 
 RUN apk update && apk add \
 	openssh-client \
@@ -15,16 +15,11 @@ RUN curl -sSL --fail --header "Accept: application/tar+gzip, application/x-gzip,
   | tar --no-same-owner -C /usr/bin/ "./hugo" -xz && \
   chmod 0777 /usr/bin/hugo
 
-ENV CADDY_VERSION=latest
+ENV CADDY_VERSION=0.8.3
 RUN curl -sSL --fail --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \
   "https://caddyserver.com/download/build?os=linux&arch=amd64&features=cors%2Cgit%2Chugo%2Cipfilter%2Cmailout%2Crealip%2Csearch%2Cupload" \
   | tar --no-same-owner -C /usr/bin/ -xz "caddy" && \
   chmod 0777 /usr/bin/caddy
-
-# RUN curl --silent --show-error --fail --location --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \
-#   "https://caddyserver.com/download/build?os=linux&arch=amd64&features=cors%2Cgit%2Chugo%2Cipfilter%2Cjsonp%2Cjwt%2Cmailout%2Cprometheus%2Crealip%2Csearch%2Cupload" \
-#   | tar --no-same-owner -C /usr/bin/ -xz caddy && \
-#   chmod 0777 /usr/bin/caddy
 
 ADD GeoLite2-Country.mmdb /var/lib/caddy/
 

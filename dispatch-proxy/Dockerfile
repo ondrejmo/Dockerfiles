@@ -4,7 +4,7 @@ ADD README.md /README.md
 
 RUN apk update && apk add nodejs \
   && rm -rf /var/cache/apk/*
-RUN npm install -g dispatch-proxy
-RUN rm -r /root/.npm
+RUN npm install -g dispatch-proxy \
+  && rm -r /root/.npm
 
 ENTRYPOINT [ "dispatch" ]

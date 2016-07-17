@@ -7,7 +7,8 @@ RUN apk update && apk add \
 	openssh-client \
 	git \
 	tar \
-  curl
+  curl \
+  && rm -rf /var/cache/apk/*
 
 ENV HUGO_VERSION=0.16
 RUN curl -sSL --fail --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \

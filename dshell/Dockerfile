@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
   python-pypcap \
   python-pip \
   wget \
-  git
+  git \
+  && apt-get autoclean
 
 RUN pip install pygeoip
 
@@ -33,8 +34,5 @@ RUN make
 # Used to mount pcap from a host OS directory
 VOLUME /pcap
 WORKDIR /pcap
-
-# clear to make the image smaller
-RUN apt-get autoclean
 
 ENTRYPOINT [ "/opt/Dshell/dshell" ]

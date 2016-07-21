@@ -13,4 +13,4 @@ RUN npm install -g functional-javascript-workshop
 RUN npm install -g expressworks
 RUN rm -r /root/.npm
 
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "sh" ]

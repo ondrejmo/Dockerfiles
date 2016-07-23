@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
-LABEL caddy_version="0.8.3" hugo_version="0.16" architecture="amd64"
+LABEL caddy_version="0.9" hugo_version="0.16" architecture="amd64"
 
 RUN apk update && apk add \
 	openssh-client \
@@ -16,9 +16,9 @@ RUN curl -sSL --fail --header "Accept: application/tar+gzip, application/x-gzip,
   | tar --no-same-owner -C /usr/bin/ "./hugo" -xz && \
   chmod 0777 /usr/bin/hugo
 
-ENV CADDY_VERSION=0.8.3
+ENV CADDY_VERSION=0.9
 RUN curl -sSL --fail --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \
-  "https://caddyserver.com/download/build?os=linux&arch=amd64&features=cors%2Cgit%2Chugo%2Cipfilter%2Cmailout%2Crealip%2Csearch%2Cupload" \
+  "https://caddyserver.com/download/build?os=linux&arch=amd64&features=filemanager%2Cgit%2Chugo%2Cipfilter%2Cjwt%2Clocale%2Cmailout%2Cminify%2Cprometheus%2Cratelimit%2Crealip%2Csearch" \
   | tar --no-same-owner -C /usr/bin/ -xz "caddy" && \
   chmod 0777 /usr/bin/caddy
 

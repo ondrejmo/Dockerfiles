@@ -3,6 +3,8 @@ These are Dockerfiles I've created for programs without official docker image or
 
 All images are up-to-date and automaticly builded on [My Docker Hub](https://hub.docker.com/u/ondrejmo)  
 
+**PUSH.d** images without wrapper function and automated build.
+
 **README.md** is in root directory of each image and contains link to the github repo of that program and the function wrapper I use. Can be easily extracted using getreadme function or source in this repo.
 
 **TODO.d** contains images with failing build, which I don't use or images wiht unfinished README.md.

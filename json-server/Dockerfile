@@ -5,6 +5,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 # json-server(){
 #   docker run -it --rm \
 #     --net host \
+#     -u $(id -u):$(id -g) \
 #     -v `pwd`:/data \
 #     -w /data \
 #     ondrejmo/json-server "$@"

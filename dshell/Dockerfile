@@ -6,6 +6,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #   docker run -it --rm \
 #   --net host \
 #   --cap-add=NET_ADMIN \
+#   -u $(id -u):$(id -g) \
 #   -v `pwd`:/pcap \
 #   -w /pcap \
 #   ondrejmo/dshell "$@"

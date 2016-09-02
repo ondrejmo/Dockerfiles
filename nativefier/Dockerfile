@@ -5,6 +5,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 # nativefier() {
 #   docker run -it --rm \
 #     --net host \
+#     -u $(id -u):$(id -g) \
 #     -v `pwd`/apps:/apps \
 #     -w /apps \
 #     ondrejmo/nativefier "$@"

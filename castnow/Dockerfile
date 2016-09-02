@@ -5,6 +5,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 # castnow(){
 #   docker run -it --rm \
 #     --net host \
+#     -u $(id -u):$(id -g) \
 #     -v `pwd`:/stream \
 #     -w /stream \
 #     ondrejmo/castnow "$@"

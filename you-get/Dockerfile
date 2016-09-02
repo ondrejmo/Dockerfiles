@@ -4,7 +4,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 ## https://github.com/soimort/you-get
 # you-get(){
 #   docker run -it --rm \
-#     --log-driver none \
+#     -u $(id -u):$(id -g) \
 #     -v `pwd`:/downloads \
 #     -w /downloads \
 #     ondrejmo/you-get "$@"

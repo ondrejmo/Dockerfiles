@@ -1,6 +1,12 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/sindresorhus/speed-test
+# speed-test(){
+#   docker run -it --rm \
+#     --net host \
+#     ondrejmo/speed-test "$@"
+# }
 
 RUN apk update && apk add nodejs \
   && rm -rf /var/cache/apk/*

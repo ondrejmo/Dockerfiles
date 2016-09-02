@@ -1,16 +1,21 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
-## https://github.com/Morhaus/dispatch-proxy
-# dispatch(){
+## https://github.com/xat/castnow
+# castnow(){
 #   docker run -it --rm \
 #     --net host \
-#     ondrejmo/dispatch-proxy "$@"
+#     -v `pwd`:/stream \
+#     -w /stream \
+#     ondrejmo/castnow "$@"
 # }
 
 RUN apk update && apk add nodejs \
   && rm -rf /var/cache/apk/*
-RUN npm install -g dispatch-proxy \
+RUN npm install -g castnow \
   && rm -r /root/.npm
 
-ENTRYPOINT [ "dispatch" ]
+WORKDIR /stream
+VOLUME /stream
+
+ENTRYPOINT [ "castnow" ]

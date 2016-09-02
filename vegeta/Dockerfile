@@ -1,6 +1,11 @@
 FROM golang:alpine
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/tsenart/vegeta
+# vegeta() {
+#   docker run -it --rm \
+#     ondrejmo/vegeta "$@"
+# }
 
 RUN apk update && apk add git \
   && rm -rf /var/cache/apk/*

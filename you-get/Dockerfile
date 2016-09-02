@@ -1,6 +1,14 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/soimort/you-get
+# you-get(){
+#   docker run -it --rm \
+#     --log-driver none \
+#     -v `pwd`:/downloads \
+#     -w /downloads \
+#     ondrejmo/you-get "$@"
+# }
 
 RUN apk update && apk add \
   ffmpeg \

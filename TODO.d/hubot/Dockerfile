@@ -1,6 +1,5 @@
 FROM node:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
 
 RUN apt-get update && apt-get install -y git
 RUN npm install -g yo generator-hubot \

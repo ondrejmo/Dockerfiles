@@ -1,4 +1,3 @@
-## Drone.io
 mkdir -p $volumes/drone && touch /var/lib/volumes/drone/drone.sqlite
 docker run -d \
     --name drone \

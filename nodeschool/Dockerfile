@@ -1,6 +1,6 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD workshops-list.txt /workshops-list.txt
+ADD workshops.txt /workshops.txt
 
 RUN apk update && apk add nodejs \
   && rm -rf /var/cache/apk/*

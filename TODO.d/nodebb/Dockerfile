@@ -1,7 +1,9 @@
-# Pull base image.
 FROM node:latest
 MAINTAINER Ondřej Molík ondrejmo@outlook.com
-ADD README.md /README.md
+
+## https://github.com/NodeBB/NodeBB
+# docker run -d -p 6379:6379 --name nodebb-redis redis:latest
+# docker run -it --name nodebb --link nodebb-redis:redis -p 80:4567 ondrejmo/nodebb
 
 # Install nodebb
 RUN cd /opt && git clone -b v0.6.x https://github.com/NodeBB/NodeBB nodebb

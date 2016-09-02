@@ -1,6 +1,11 @@
 FROM golang:alpine
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://www.github.com/rakyll/boom
+# boom() {
+#   docker run -it --rm \
+#     ondrejmo/boom "$@"
+# }
 
 RUN apk update && apk add git \
   && rm -rf /var/cache/apk/*

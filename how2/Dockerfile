@@ -1,6 +1,11 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/santinic/how2
+# how2(){
+#   docker run -it --rm \
+#     ondrejmo/how2 "$@"
+# }
 
 RUN apk update && apk add nodejs \
   && rm -rf /var/cache/apk/*

@@ -1,6 +1,14 @@
 FROM alpine:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/jiahaog/nativefier
+# nativefier() {
+#   docker run -it --rm \
+#     --net host \
+#     -v `pwd`/apps:/apps \
+#     -w /apps \
+#     ondrejmo/nativefier "$@"
+# }
 
 RUN apk update && apk add nodejs imagemagick \
   && rm -rf /var/cache/apk/*

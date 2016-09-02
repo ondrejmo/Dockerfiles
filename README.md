@@ -1,10 +1,10 @@
 # Dockerfiles
 These are Dockerfiles I've created for programs without official docker image or with bad one. I'll be grateful for any contribution or improvement.
 
-All images are up-to-date and automaticly builded on [My Docker Hub](https://hub.docker.com/u/ondrejmo)  
+All Dockerfiles are selfdescribing (contain link to github repo of that program and function wrapper).
+All images are up-to-date and automaticly builded on [My Docker Hub](https://hub.docker.com/u/ondrejmo), except of images in **TODO.d**, which I haven't finished yet or I simply don't use/maintain them.
 
-**PUSH.d** images without wrapper function and automated build.
-
-**README.md** is in root directory of each image and contains link to the github repo of that program and the function wrapper I use. Can be easily extracted using getreadme function or source in this repo.
-
-**TODO.d** contains images with failing build, which I don't use or images wiht unfinished README.md.
+#### Great Dockerfiles repos, made by other people:
+* https://github.com/jfrazelle/dockerfiles
+* https://github.com/pandrew/dockerfiles
+* https://github.com/vimagick/dockerfiles

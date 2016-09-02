@@ -1,6 +1,11 @@
 FROM golang:alpine
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/jfrazelle/udict
+# udict(){
+#   docker run -it --rm \
+#     ondrejmo/udict "$@"
+# }
 
 RUN apk update && apk add git \
   && rm -rf /var/cache/apk/*

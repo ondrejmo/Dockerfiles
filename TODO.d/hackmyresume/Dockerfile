@@ -1,6 +1,11 @@
 FROM node:latest
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://github.com/hacksalot/HackMyResume
+# hackmyresume() {
+#   docker run -it --rm \
+#     ondrejmo/hackmyresume "$@"
+# }
 
 RUN npm install -g hackmyresume
 

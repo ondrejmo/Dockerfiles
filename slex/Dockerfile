@@ -1,6 +1,16 @@
 FROM golang:alpine
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
-ADD README.md /README.md
+
+## https://www.github.com/crosbymichael/slex
+# slex() {
+#   docker run -it --rm \
+#     --name slex \
+#     --net host \
+#     -v ~/.ssh:/root/.ssh \
+#     -v ~/.gnupg:/root/.gnupg \
+#     -v /etc/hosts:/etc/hosts:ro \
+#     ondrejmo/slex "$@"
+# }
 
 RUN apk update && apk add git \
   && rm -rf /var/cache/apk/*

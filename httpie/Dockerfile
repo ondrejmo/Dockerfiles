@@ -16,7 +16,7 @@ RUN apk update && apk add \
 	ca-certificates \
 	python \
 	py-pip \
-	&& rm -rf /var/cache/apk/* \
-	&& pip install httpie httpie-unixsocket httpie-oauth httpie-http2
+	&& rm -rf /var/cache/apk/*
+RUN pip install httpie httpie-unixsocket httpie-oauth httpie-http2
 
 ENTRYPOINT [ "http" ]

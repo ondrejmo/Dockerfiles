@@ -10,7 +10,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 RUN apk update && apk add \
   python \
   py-pip \
-  && rm -rf /var/cache/apk/* \
-  && pip install haxor-news
+  && rm -rf /var/cache/apk/*
+RUN pip install haxor-news
 
 ENTRYPOINT [ "hn" ]

@@ -14,8 +14,8 @@ RUN apk update && apk add \
   ffmpeg \
   python3 \
   py-pip \
-  && rm -rf /var/cache/apk/* \
-  && pip3 install you-get
+  && rm -rf /var/cache/apk/*
+RUN pip3 install you-get
 
 RUN mkdir -p /downloads
 WORKDIR /downloads

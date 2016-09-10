@@ -5,7 +5,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 # you-get(){
 #   docker run -it --rm \
 #     -u $(id -u):$(id -g) \
-#     -v `pwd`:/downloads \
+#     -v "$PWD":/downloads \
 #     -w /downloads \
 #     ondrejmo/you-get "$@"
 # }

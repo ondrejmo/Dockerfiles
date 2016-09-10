@@ -6,7 +6,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #   docker run -it --rm \
 #     --net host \
 #     -u $(id -u):$(id -g) \
-#     -v `pwd`:/downloads \
+#     -v "$PWD":/downloads \
 #     -w /downloads \
 #     ondrejmo/webtorrent "$@"
 # }

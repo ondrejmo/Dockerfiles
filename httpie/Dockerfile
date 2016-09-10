@@ -7,7 +7,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     --net host \
 #     -v /var/run/docker.sock:/var/run/docker.sock \
 #     -u $(id -u):$(id -g) \
-#     -v `pwd`:/downloads \
+#     -v "$PWD":/downloads \
 #     -w /downloads  \
 #     ondrejmo/httpie "$@"
 # }

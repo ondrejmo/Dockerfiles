@@ -7,7 +7,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #   --net host \
 #   --cap-add=NET_ADMIN \
 #   -u $(id -u):$(id -g) \
-#   -v `pwd`:/pcap \
+#   -v "$PWD":/pcap \
 #   -w /pcap \
 #   ondrejmo/dshell "$@"
 # }

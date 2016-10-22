@@ -5,6 +5,6 @@ All Dockerfiles are selfdescribing (contain link to github repo of that program 
 All images are up-to-date and automaticly builded on [My Docker Hub](https://hub.docker.com/u/ondrejmo), except of images in **TODO.d**, which I haven't finished yet or I simply don't use/maintain them.
 
 #### Great Dockerfiles repos, made by other people:
-* https://github.com/jfrazelle/dockerfiles
+* https://github.com/jessfraz/dockerfiles
 * https://github.com/pandrew/dockerfiles
 * https://github.com/vimagick/dockerfiles

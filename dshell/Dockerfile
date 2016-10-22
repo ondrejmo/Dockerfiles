@@ -6,7 +6,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #   docker run -it --rm \
 #   --net host \
 #   --cap-add=NET_ADMIN \
-#   -u $(id -u):$(id -g) \
 #   -v "$PWD":/pcap \
 #   -w /pcap \
 #   ondrejmo/dshell "$@"
@@ -29,10 +28,13 @@ RUN git clone https://github.com/USArmyResearchLab/Dshell.git
 
 WORKDIR /opt/Dshell/share/GeoIP/
 RUN wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+RUN gunzip GeoIP.dat.gz
 RUN wget http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz
+RUN gunzip GeoIPv6.dat.gz
 RUN wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
+RUN gunzip GeoIPASNum.dat.gz
 RUN wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNumv6.dat.gz
-RUN gunzip *.gz
+RUN gunzip GeoIPASNumv6.dat.gz
 
 WORKDIR /opt/Dshell/
 RUN make

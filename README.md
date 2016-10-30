@@ -8,3 +8,7 @@ All images are up-to-date and automaticly builded on [My Docker Hub](https://hub
 * https://github.com/jessfraz/dockerfiles
 * https://github.com/pandrew/dockerfiles
 * https://github.com/vimagick/dockerfiles
+
+# TODO:
+* Dockerfiles/faker
+* https://github.com/mzucker/noteshrink

@@ -10,5 +10,6 @@ All images are up-to-date and automaticly builded on [My Docker Hub](https://hub
 * https://github.com/vimagick/dockerfiles
 
 # TODO:
-* Dockerfiles/faker
+* apk add --no-cache
+* CMD ["--help"]
 * https://github.com/mzucker/noteshrink

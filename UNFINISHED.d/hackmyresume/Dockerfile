@@ -1,5 +1,4 @@
-FROM node:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
 
 ## https://github.com/hacksalot/HackMyResume
 # hackmyresume() {

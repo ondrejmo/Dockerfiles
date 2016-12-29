@@ -1,5 +1,4 @@
 FROM golang:alpine
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
 ## https://www.github.com/rakyll/boom
 # boom() {

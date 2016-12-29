@@ -1,5 +1,4 @@
-FROM node:latest
-MAINTAINER Ondřej Molík ondrejmo@outlook.com
+FROM node:alpine
 
 ## https://github.com/NodeBB/NodeBB
 # docker run -d --name nodebb-redis redis:latest

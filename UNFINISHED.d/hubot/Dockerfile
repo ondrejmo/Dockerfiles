@@ -1,7 +1,7 @@
-FROM node:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
 
-RUN apt-get update && apt-get install -y git
+RUN apk update && apk add git \
+  && rm -rf /var/cache/apk/*
 RUN npm install -g yo generator-hubot \
   && rm -r /root/.npm
 RUN chmod g+rwx /root /root/.config /root/.config/configstore /hubot /root/.npm

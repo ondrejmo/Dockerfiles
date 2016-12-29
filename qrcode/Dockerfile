@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:3-alpine
 MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
 ## https://github.com/sylnsfar/qrcode

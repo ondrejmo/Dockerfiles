@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM python:alpine
 
 ## https://github.com/jsvine/waybackpack
 # waybackpack(){
@@ -9,10 +8,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     ondrejmo/waybackpack"$@"
 # }
 
-RUN apk update && apk add \
-	python \
-	py-pip \
-	&& rm -rf /var/cache/apk/*
 RUN pip install waybackpack
 
 ENTRYPOINT [ "waybackpack" ]

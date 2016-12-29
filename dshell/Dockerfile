@@ -1,5 +1,4 @@
 FROM ubuntu:trusty
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
 ## https://github.com/USArmyResearchLab/Dshell
 # dshell() {

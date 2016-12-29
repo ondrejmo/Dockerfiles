@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM python:alpine
 
 ## https://github.com/donnemartin/haxor-news
 # hn(){
@@ -7,10 +6,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     ondrejmo/haxor-news "$@"
 # }
 
-RUN apk update && apk add \
-  python \
-  py-pip \
-  && rm -rf /var/cache/apk/*
 RUN pip install haxor-news
 
 ENTRYPOINT [ "hn" ]

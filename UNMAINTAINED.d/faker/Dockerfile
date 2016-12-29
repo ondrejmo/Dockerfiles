@@ -1,5 +1,4 @@
 FROM php:alpine
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
 ## https://github.com/bit3/faker-cli
 # faker(){

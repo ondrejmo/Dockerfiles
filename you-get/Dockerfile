@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM python:3-alpine
 
 ## https://github.com/soimort/you-get
 # you-get(){
@@ -12,8 +11,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
 RUN apk update && apk add \
   ffmpeg \
-  python3 \
-  py-pip \
   && rm -rf /var/cache/apk/*
 RUN pip3 install you-get
 

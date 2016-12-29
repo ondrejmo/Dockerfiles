@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 
 LABEL caddy_version="0.9" hugo_version="0.16" architecture="amd64"
 

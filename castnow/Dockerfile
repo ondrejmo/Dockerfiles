@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
 
 ## https://github.com/xat/castnow
 # castnow(){
@@ -11,8 +10,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     ondrejmo/castnow "$@"
 # }
 
-RUN apk update && apk add nodejs \
-  && rm -rf /var/cache/apk/*
 RUN npm install -g castnow \
   && rm -r /root/.npm
 

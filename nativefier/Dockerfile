@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
 
 ## https://github.com/jiahaog/nativefier
 # nativefier() {
@@ -11,7 +10,7 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     ondrejmo/nativefier "$@"
 # }
 
-RUN apk update && apk add nodejs imagemagick \
+RUN apk update && apk add imagemagick \
   && rm -rf /var/cache/apk/*
 RUN npm install -g nativefier \
   && rm -r /root/.npm

@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
 
 ## https://github.com/sindresorhus/speed-test
 # speed-test(){
@@ -8,8 +7,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     ondrejmo/speed-test "$@"
 # }
 
-RUN apk update && apk add nodejs \
-  && rm -rf /var/cache/apk/*
 RUN npm install -g speed-test \
   && rm -r /root/.npm
 

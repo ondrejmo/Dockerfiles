@@ -1,9 +1,7 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
+
 ADD workshops.txt /workshops.txt
 
-RUN apk update && apk add nodejs \
-  && rm -rf /var/cache/apk/*
 RUN npm install -g javascripting
 RUN npm install -g learnyounode
 RUN npm install -g learnyoumongo

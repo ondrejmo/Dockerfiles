@@ -1,5 +1,4 @@
-FROM alpine:latest
-MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
+FROM node:alpine
 
 ## https://github.com/santinic/how2
 # how2(){
@@ -7,8 +6,6 @@ MAINTAINER Ondřej Molík <ondrejmo@outlook.com>
 #     ondrejmo/how2 "$@"
 # }
 
-RUN apk update && apk add nodejs \
-  && rm -rf /var/cache/apk/*
 RUN npm install -g how2 \
   && rm -r /root/.npm
 

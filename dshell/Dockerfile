@@ -5,6 +5,7 @@ FROM ubuntu:trusty
 #   docker run -it --rm \
 #   --net host \
 #   --cap-add=NET_ADMIN \
+#   -u $(id -u):$(id -g) \
 #   -v "$PWD":/pcap \
 #   -w /pcap \
 #   ondrejmo/dshell "$@"

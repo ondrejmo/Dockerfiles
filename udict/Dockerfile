@@ -6,8 +6,8 @@ FROM golang:alpine
 #     ondrejmo/udict "$@"
 # }
 
-RUN apk update && apk add git \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache git
 RUN go get -u github.com/jfrazelle/udict
 
 ENTRYPOINT [ "udict" ]
+CMD [ "--help" ]

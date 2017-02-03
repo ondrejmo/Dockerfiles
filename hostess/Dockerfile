@@ -7,8 +7,8 @@ FROM golang:alpine
 #     ondrejmo/hostess "$@"
 # }
 
-RUN apk update && apk add git \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache git
 RUN go get -u github.com/cbednarski/hostess/cmd/hostess
 
 ENTRYPOINT [ "hostess" ]
+CMD [ "--help" ]

@@ -6,8 +6,8 @@ FROM golang:alpine
 #     ondrejmo/vegeta "$@"
 # }
 
-RUN apk update && apk add git \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache git
 RUN go get -u github.com/tsenart/vegeta
 
 ENTRYPOINT [ "vegeta" ]
+CMD [ "--help" ]

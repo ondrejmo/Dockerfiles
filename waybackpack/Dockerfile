@@ -11,3 +11,4 @@ FROM python:alpine
 RUN pip install waybackpack
 
 ENTRYPOINT [ "waybackpack" ]
+CMD [ "--help" ]

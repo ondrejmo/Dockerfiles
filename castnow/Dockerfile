@@ -17,3 +17,4 @@ WORKDIR /stream
 VOLUME /stream
 
 ENTRYPOINT [ "castnow" ]
+CMD [ "--help" ]

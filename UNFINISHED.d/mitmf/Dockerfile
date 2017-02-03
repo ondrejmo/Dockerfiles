@@ -23,3 +23,4 @@ RUN pip install -r requirements.txt
 VOLUME /MITMf/logs/
 
 ENTRYPOINT ["python", "/MITMf/mitmf.py"]
+CMD [ "--help" ]

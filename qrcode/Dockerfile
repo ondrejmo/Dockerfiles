@@ -16,3 +16,4 @@ VOLUME /qr
 WORKDIR /qr
 
 ENTRYPOINT [ "myqr" ]
+CMD [ "--help" ]

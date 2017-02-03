@@ -17,3 +17,4 @@ WORKDIR /downloads
 VOLUME /downloads
 
 ENTRYPOINT [ "webtorrent" ]
+CMD [ "--help" ]

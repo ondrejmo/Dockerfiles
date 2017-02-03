@@ -11,3 +11,4 @@ RUN npm install -g speed-test \
   && rm -r /root/.npm
 
 ENTRYPOINT [ "speed-test" ]
+CMD [ "--help" ]

@@ -11,9 +11,8 @@ FROM python:alpine
 #     ondrejmo/httpie "$@"
 # }
 
-RUN apk update && apk add \
-	ca-certificates \
-	&& rm -rf /var/cache/apk/*
+RUN apk add --no-cache ca-certificates
 RUN pip install httpie httpie-unixsocket httpie-oauth httpie-http2
 
 ENTRYPOINT [ "http" ]
+CMD [ "--help" ]

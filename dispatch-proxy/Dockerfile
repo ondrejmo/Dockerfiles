@@ -11,3 +11,4 @@ RUN npm install -g dispatch-proxy \
   && rm -r /root/.npm
 
 ENTRYPOINT [ "dispatch" ]
+CMD [ "--help" ]

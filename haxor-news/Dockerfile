@@ -9,3 +9,4 @@ FROM python:alpine
 RUN pip install haxor-news
 
 ENTRYPOINT [ "hn" ]
+CMD [ "--help" ]

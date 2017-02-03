@@ -17,3 +17,4 @@ WORKDIR /data
 VOLUME /data
 
 ENTRYPOINT [ "json-server" ]
+CMD [ "--help" ]

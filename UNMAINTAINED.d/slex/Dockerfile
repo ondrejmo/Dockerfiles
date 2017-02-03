@@ -11,11 +11,11 @@ FROM golang:alpine
 #     ondrejmo/slex "$@"
 # }
 
-RUN apk update && apk add git \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache git
 RUN go get -u github.com/crosbymichael/slex
 
 VOLUME /root/.ssh
 VOLUME /root/.gnupg
 
 ENTRYPOINT [ "slex" ]
+CMD [ "--help" ]

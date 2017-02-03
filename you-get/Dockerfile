@@ -9,9 +9,7 @@ FROM python:3-alpine
 #     ondrejmo/you-get "$@"
 # }
 
-RUN apk update && apk add \
-  ffmpeg \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache ffmpeg
 RUN pip3 install you-get
 
 RUN mkdir -p /downloads
@@ -19,3 +17,4 @@ WORKDIR /downloads
 VOLUME /downloads
 
 ENTRYPOINT [ "you-get" ]
+CMD [ "--help" ]

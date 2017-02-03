@@ -10,8 +10,7 @@ FROM node:alpine
 #     ondrejmo/nativefier "$@"
 # }
 
-RUN apk update && apk add imagemagick \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache imagemagick
 RUN npm install -g nativefier \
   && rm -r /root/.npm
 
@@ -19,3 +18,4 @@ WORKDIR /apps
 VOLUME /apps
 
 ENTRYPOINT [ "nativefier" ]
+CMD [ "--help" ]

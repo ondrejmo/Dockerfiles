@@ -10,3 +10,4 @@ RUN npm install -g how2 \
   && rm -r /root/.npm
 
 ENTRYPOINT [ "how2" ]
+CMD [ "--help" ]

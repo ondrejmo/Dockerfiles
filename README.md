@@ -11,3 +11,4 @@ All images are up-to-date and automaticly builded on [My Docker Hub](https://hub
 
 # TODO:
 * https://github.com/mzucker/noteshrink
+* add labels: arch, maintainer

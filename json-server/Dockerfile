@@ -1,4 +1,5 @@
 FROM node:alpine
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/typicode/json-server
 # json-server(){

@@ -1,4 +1,5 @@
 FROM golang:alpine
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://www.github.com/crosbymichael/slex
 # slex() {

@@ -1,4 +1,5 @@
 FROM python:3-alpine
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/soimort/you-get
 # you-get(){

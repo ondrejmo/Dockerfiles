@@ -1,4 +1,5 @@
 FROM node:alpine
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/mafintosh/peerflix
 # peerflix(){

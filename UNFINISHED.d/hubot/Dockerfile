@@ -1,4 +1,5 @@
 FROM node:alpine
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 RUN apk update && apk add git \
   && rm -rf /var/cache/apk/*

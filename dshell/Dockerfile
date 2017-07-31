@@ -1,4 +1,5 @@
 FROM ubuntu:trusty
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/USArmyResearchLab/Dshell
 # dshell() {

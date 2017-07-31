@@ -1,4 +1,5 @@
 FROM python:alpine
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/jkbrzt/httpie
 # http(){

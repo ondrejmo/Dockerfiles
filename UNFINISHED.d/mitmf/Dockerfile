@@ -1,4 +1,6 @@
 FROM ubuntu:wily
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
+
 ADD README.md /README.md
 
 RUN apt-get update && apt-get install -y \

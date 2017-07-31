@@ -1,4 +1,5 @@
 FROM ubuntu:xenial
+LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 RUN apt-get update && apt-get install -y \
   git \

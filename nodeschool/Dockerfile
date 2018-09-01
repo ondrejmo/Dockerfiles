@@ -1,5 +1,4 @@
 FROM node:alpine
-LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ADD workshops.txt /workshops.txt
 

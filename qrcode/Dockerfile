@@ -1,5 +1,4 @@
 FROM python:3-alpine
-LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/sylnsfar/qrcode
 # myqr(){

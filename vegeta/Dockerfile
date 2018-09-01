@@ -1,5 +1,4 @@
 FROM golang:alpine
-LABEL maintainer "Ondřej Molík <ondrejmo@outlook.com>"
 
 ## https://github.com/tsenart/vegeta
 # vegeta() {

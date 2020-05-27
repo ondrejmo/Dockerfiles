@@ -2,7 +2,7 @@
 These are Dockerfiles I've created for programs without official docker image or with bad one. I'll be grateful for any contribution or improvement.
 
 All Dockerfiles are selfdescribing (contain link to github repo of that program and function wrapper).
-All images should be up-to-date and automaticly builded on [My Docker Hub](https://hub.docker.com/u/ondrejmo), except for images in ***DEPRACTATED.d**, those I haven't finished yet or I simply don't use/maintain them.
+All images should be up-to-date and automaticly builded on [My Docker Hub](https://hub.docker.com/u/ondrejmo), except for images in **DEPRACTATED.d**, those I haven't finished yet or I simply don't use/maintain them.
 
 #### Great Dockerfiles repos, made by other people:
 * https://github.com/jessfraz/dockerfiles
